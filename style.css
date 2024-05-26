@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: rgb(247, 226, 226);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background: navajowhite;
+}
+
+.container {
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    background-color: rgb(99, 66, 36);
+    height: 500px;
+    border-radius: 12px;
+}
+
+.create input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: brown;
+}
+
+.create input::placeholder {
+    color: rgb(36, 99, 99);
+    font-weight: 600;
+    font-size: 18px;
+    opacity: .4;
+    text-transform: capitalize;
+}
+
+.create button {
+    padding: 10px 25px;
+    border-radius: 12px;
+    outline: none;
+    color: rgb(36, 99, 99);
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    transition: .4s;
+    color: white;
+    text-transform: capitalize;
+}
+
+.create button:hover {
+    background-color: white;
+    color: black;
+    border: .2px solid black;
+}
+
+.show {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    width: 400px;
+    background-color: rgb(87, 99, 36);
+    height: 500px;
+    border-radius: 12px;
+}
+
+.scroll {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    width: 350px;
+    height: 400px;
+}
+
+.card {
+    width: 300px;
+    padding: 7px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card span {
+    color: brown;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.card img {
+    width: 70px;
+    border-radius: 8px;
+    border: 2px solid blue;
+    height: 60px;
+}
+
+.card button {
+    padding: 7px 18px;
+    border-radius: 12px;
+    outline: none;
+    color: rgb(36, 99, 99);
+    font-size: 14px;
+    border: none;
+    background-color: black;
+    transition: .4s;
+    color: white;
+    text-transform: capitalize;
+}
+
+.card button:hover {
+    background-color: white;
+    color: black;
+    border: .2px solid black;
+}
+
+.mainModal {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    position: fixed;
+    left: 800px;
+    border-radius: 12px;
+    background-color: burlywood;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.close {
+    padding: 7px 18px;
+    border-radius: 12px;
+    outline: none;
+    color: rgb(36, 99, 99);
+    font-size: 14px;
+    border: none;
+    background-color: red;
+    transition: .4s;
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    right: 20px;
+}
+
+
+.closeX {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
